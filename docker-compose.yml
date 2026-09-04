@@ -1,0 +1,207 @@
+
+services:
+  jd-atina-microserver:
+    platform: linux/amd64
+    image: 92455890/jd-atina-microserver:1.0.5
+    environment:
+      JDE_MICROSERVER_IP: ${JDE_MICROSERVER_IP}
+      JDE_MICROSERVER_PORT: ${JDE_MICROSERVER_PORT}  
+      JDE_MICROSERVER_DEBUG_PORT: ${JDE_MICROSERVER_DEBUG_PORT}
+      JDE_MICROSERVER_CODE: ${JDE_MICROSERVER_CODE}
+      JDE_ATINA_SERVER_VERSION: ${JDE_ATINA_SERVER_VERSION}
+      JDE_MICROSERVER_TOKEN_EXPIRATION: ${JDE_MICROSERVER_TOKEN_EXPIRATION}
+      JDE_MICROSERVER_SECRET_KEY: ${JDE_MICROSERVER_SECRET_KEY}
+      ATINA_REPOSITORY_PROTOCOL: ${ATINA_REPOSITORY_PROTOCOL}
+      ATINA_REPOSITORY_URL: ${ATINA_REPOSITORY_URL}
+      CUSTOMER_REPOSITORY_PROTOCOL: ${CUSTOMER_REPOSITORY_PROTOCOL}
+      CUSTOMER_REPOSITORY_URL: ${CUSTOMER_REPOSITORY_URL}
+      JDE_MICROSERVER_MOCKING: ${JDE_MICROSERVER_MOCKING}
+      JDE_GET_LIB_WRAPPED_UPDATE_FROM_REPOSITORY: ${JDE_GET_LIB_WRAPPED_UPDATE_FROM_REPOSITORY}
+      JDE_LIB_WRAPPED_VERSION: ${JDE_LIB_WRAPPED_VERSION}
+      JDE_GET_LIB_WEB_SERVICE_FROM_REPOSITORY: ${JDE_GET_LIB_WEB_SERVICE_FROM_REPOSITORY}
+      STD_WEB_SERVICE_VERSION: ${STD_WEB_SERVICE_VERSION}
+      STD_WEB_SERVICE_CONSTANTS_VERSION: ${STD_WEB_SERVICE_CONSTANTS_VERSION}
+      javaJDKImage: ${javaJDKImage}
+      javaJDKRootFolder:  ${javaJDKRootFolder}
+      DEBUG_ACTIVO: ${DEBUG_ACTIVO}
+      TZ: ${TZ}
+      KERNEL_RECICLYING: ${KERNEL_RECICLYING}
+      KERNEL_RECICLYING_BY_USER: ${KERNEL_RECICLYING_BY_USER}
+      SESSION_EXPIRATION_TIME: ${SESSION_EXPIRATION_TIME}
+      SUBMIT_UBE_USER_LOGGED: ${SUBMIT_UBE_USER_LOGGED}
+      JDE_JAVA_XMS: ${JDE_JAVA_XMS}
+      JDE_JAVA_XMX: ${JDE_JAVA_XMX}
+      JDE_JAVA_HEAP_DUMP_ON_OOM: ${JDE_JAVA_HEAP_DUMP_ON_OOM}
+      JDE_JAVA_HEAP_DUMP_PATH: ${JDE_JAVA_HEAP_DUMP_PATH}
+      JDE_JAVA_ERROR_FILE: ${JDE_JAVA_ERROR_FILE}
+      JDE_JAVA_EXTRA_OPTS: ${JDE_JAVA_EXTRA_OPTS}
+      CLEANING_LOG_TIME: ${CLEANING_LOG_TIME}
+      JDE_CONNECTOR_SERVER_LEVEL: ${JDE_CONNECTOR_SERVER_LEVEL}
+      JDE_REST_SERVER_LEVEL: ${JDE_REST_SERVER_LEVEL}
+      JDE_CONNECTOR_SERVICE_LEVEL: ${JDE_CONNECTOR_SERVICE_LEVEL}
+      JDE_HANDLER_LEVEL: ${JDE_HANDLER_LEVEL}
+      JDE_SINGLE_WS_CLIENT_LEVEL: ${JDE_SINGLE_WS_CLIENT_LEVEL}
+      JDE_SINGLE_WS_CONNECTION_LEVEL: ${JDE_SINGLE_WS_CONNECTION_LEVEL}
+      JDE_DEBUG_MODE: ${JDE_DEBUG_MODE}
+      JDE_LOG_PROPERTIES_TARGET: ${JDE_LOG_PROPERTIES_TARGET}
+      HOST_EXTRA_HOSTS_FILE: ${HOST_EXTRA_HOSTS_FILE}
+      JDE_EXTRA_HOSTS_FILE: /tmp/extra-hosts.txt
+      JDE_MONITORING_ENABLED: ${JDE_MONITORING_ENABLED:-false}
+      JDE_MONITORING_PORT: ${JDE_MONITORING_PORT:-9404}
+      # JDE_USE_HOST_FOR_GETSTATUS: ${JDE_USE_HOST_FOR_GETSTATUS:-false}
+    container_name: jd-atina-microserver
+    healthcheck:
+      test: ["CMD-SHELL", "bash -c '</dev/tcp/localhost/${JDE_MICROSERVER_PORT}' || exit 1"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 120s
+    ports:
+     - "${JDE_MICROSERVER_PORT}:${JDE_MICROSERVER_PORT}"
+     - "${JDE_MICROSERVER_DEBUG_PORT}:${JDE_MICROSERVER_DEBUG_PORT}"
+     - "${JDE_MONITORING_PORT:-9404}:${JDE_MONITORING_PORT:-9404}"
+    volumes:
+     - DataLogs:/tmp/jde/JDEConnectorServerLog
+     - JDETmp:/tmp/jde
+     - JDELog:/tmp/jdelog
+     # Mount JDE env folders directly (no docker cp needed)
+     - ${JDE_LIBS_ROOT}/config/JUAT920:/tmp/jde/config/JUAT920:ro
+     # Mount JARs directly
+     - ${JDE_LIBS_ROOT}/jde-lib-wrapped-${JDE_LIB_WRAPPED_VERSION}.jar:/tmp/jde/jde-lib-wrapped-${JDE_LIB_WRAPPED_VERSION}.jar
+     - ${JDE_LIBS_ROOT}/StdWebService-${STD_WEB_SERVICE_VERSION}.jar:/tmp/jde/StdWebService-${STD_WEB_SERVICE_VERSION}.jar
+     - ${JDE_LIBS_ROOT}/JDEAtinaOverrideServicesConstants-1.0.0.jar:/tmp/jde/JDEAtinaOverrideServicesConstants-1.0.0.jar
+     # Mount properties file:
+     - ${JDE_LIBS_ROOT}/service-constants.properties:/var/jdeatinaserver/service-constants.properties:ro    
+     # Mount extra-hosts
+     - ${HOST_EXTRA_HOSTS_FILE}:/tmp/extra-hosts.txt:ro
+     #  Maven local repository from Mac
+     - ${HOST_MAVEN_M2}:/root/.m2
+    user: root
+    networks:
+      - jdemicronet
+    
+ 
+  jde-atina-gateway:
+    platform: linux/amd64
+    image: 92455890/jde-atina-gateway:1.0.0
+    container_name: jde-atina-gateway
+    environment:
+      JDE_GRPC_TARGET: jd-atina-microserver:${JDE_MICROSERVER_PORT}
+      DEV_MODE: true
+    healthcheck:
+      test: ["CMD-SHELL", "curl -sf http://localhost:8086/v1/health || exit 1"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+    depends_on:
+      jd-atina-microserver:
+        condition: service_healthy
+    ports:
+      - "8086:8086"
+    networks:
+      - jdemicronet
+
+  swagger-ui:
+    image: swaggerapi/swagger-ui
+    container_name: jde-swagger-ui
+    environment:
+      SWAGGER_JSON: /openapi/proto/jde.openapi3.json
+    ports:
+      - "8081:8080"
+    volumes:
+      - ${JDE_LIBS_ROOT}/openapiv2:/openapi:ro
+    depends_on:
+      - jde-atina-gateway
+    networks:
+      - jdemicronet
+
+  # ====================================
+  # Monitoring Stack (optional)
+  # Start with: docker compose --profile monitoring up -d
+  # Requires: JDE_MONITORING_ENABLED=true in .env
+  # ====================================
+
+  prometheus:
+    image: prom/prometheus:v2.47.0
+    container_name: jde-prometheus
+    profiles: ["monitoring"]
+    volumes:
+      - ./monitoring/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - prometheus_data:/prometheus
+    ports:
+      - "9090:9090"
+    networks:
+      - jdemicronet
+    depends_on:
+      jd-atina-microserver:
+        condition: service_healthy
+
+  grafana:
+    image: grafana/grafana:10.1.0
+    container_name: jde-grafana
+    profiles: ["monitoring"]
+    volumes:
+      - grafana_data:/var/lib/grafana
+      - ./monitoring/grafana/provisioning:/etc/grafana/provisioning:ro
+      - ./monitoring/grafana/dashboards:/var/lib/grafana/dashboards:ro
+    environment:
+      GF_SECURITY_ADMIN_PASSWORD: ${GRAFANA_ADMIN_PASSWORD:-admin}
+      GF_USERS_ALLOW_SIGN_UP: "false"
+    ports:
+      - "3000:3000"
+    networks:
+      - jdemicronet
+    depends_on:
+      - prometheus
+
+  loki:
+    image: grafana/loki:2.9.0
+    container_name: jde-loki
+    profiles: ["monitoring"]
+    ports:
+      - "3100:3100"
+    volumes:
+      - loki_data:/loki
+    networks:
+      - jdemicronet
+
+  promtail:
+    image: grafana/promtail:2.9.0
+    container_name: jde-promtail
+    profiles: ["monitoring"]
+    volumes:
+      - ./monitoring/promtail.yml:/etc/promtail/config.yml:ro
+      - DataLogs:/var/log/jde/atina:ro
+      - JDELog:/var/log/jde/jdelog:ro
+    networks:
+      - jdemicronet
+    depends_on:
+      - loki
+
+volumes:
+  DataLogs: 
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: ${Volume_DataLogs}
+  JDETmp: 
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: ${Volume_JDETmp}
+  JDELog:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: ${Volume_JDELog}
+  prometheus_data:
+  grafana_data:
+  loki_data:
+
+networks:
+  jdemicronet:
+    driver: bridge
