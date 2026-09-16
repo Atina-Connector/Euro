@@ -46,7 +46,7 @@ curl --location 'http://localhost:8086/v1/operations/execute' \
   "listaDeValores": {
     "cActionCode": "I",
     "szVersion": "ZJDE0001",
-    "mnAddressBookNumber": 1
+    "mnAddressBookNumber": 2193
   },
   "connectorName": "BSFN",
   "transactionID": 502960
