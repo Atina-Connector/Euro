@@ -31,6 +31,11 @@ echo "ERROR: No se pudo obtener jwtToken del login."
 exit 1
 fi
 
+# ============================================================
+# 2. CALL
+#  ============================================================
+#
+
 echo "Ejecutando AddressBookMasterMBF..."
 
 curl --location 'http://localhost:8086/v1/operations/execute' \
@@ -51,6 +56,38 @@ curl --location 'http://localhost:8086/v1/operations/execute' \
   "connectorName": "BSFN",
   "transactionID": 502960
 }'
+
+
+# ============================================================
+# 3. CALL
+#  ============================================================
+#
+
+echo "Ejecutando EurCallECommerceFunctions..."
+
+curl --location 'http://localhost:8086/v1/operations/execute' \
+--header "Token: $JWT_TOKEN" \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--header 'Accept-Encoding: gzip, deflate, br' \
+--header 'TransactionId: 0' \
+--header 'correlationUUID: ACME-d2cfc11c-0b99-4434-a97c-f2294e0b9019' \
+--header "Authorization: Bearer $JWT_TOKEN" \
+--data '{
+  "operacionKey": "EurCallECommerceFunctions",
+  "listaDeValores": {
+    "szEdiDocumentType_EDCT": "IL",
+    "mnAddressNumberShipTo_SHAN": 611802,
+    "jdDateRequested_DRQJ": "2028-09-21"
+  },
+  "connectorName": "BSFN",
+  "transactionID": 502961
+}'
+
+# ============================================================
+# 4. UBE
+#  ============================================================
+#
 
 echo "submit UBE"
 curl --location 'http://localhost:8086/v1/operations/execute' --header "Token: $JWT_TOKEN" --header 'Content-Type: application/json' --header 'Accept-Encoding: gzip, deflate, br' --header 'TransactionId: 0' --header 'correlationUUID: ACME-1eed3908-9ea6-4925-958d-fdb10717c689' --header "Authorization: Bearer $JWT_TOKEN" --data '{ "operacionKey": "R01010Z-ZJDE0001", "listaDeValores": { "Report Interconnect": { "szEdiUserIdData": "JDE", "szEdiTransactNumberData": "100"}, "Processing Options": { "Versionconsolidated": "ZJDE0001"}, "Job Queue": "QBATCH", "Data Selection": "F0101.EDUS='\''JDE'\''"}, "connectorName": "UBE", "transactionID": 502960}'
