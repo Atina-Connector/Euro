@@ -77,6 +77,7 @@ services:
      #  Maven local repository from Mac
      - ${HOST_MAVEN_M2}:/root/.m2
     user: root
+    restart: unless-stopped
     networks:
       - jdemicronet
     
@@ -99,6 +100,7 @@ services:
         condition: service_healthy
     ports:
       - "8086:8086"
+    restart: unless-stopped
     networks:
       - jdemicronet
 
@@ -113,6 +115,7 @@ services:
       - ${JDE_LIBS_ROOT}/openapiv2:/openapi:ro
     depends_on:
       - jde-atina-gateway
+    restart: unless-stopped
     networks:
       - jdemicronet
 
