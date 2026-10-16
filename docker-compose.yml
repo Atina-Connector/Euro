@@ -207,6 +207,7 @@ volumes:
 
 networks:
   jdemicronet:
+    name: jdemicronet
     driver: bridge
     ipam:
       config:
