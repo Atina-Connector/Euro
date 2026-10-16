@@ -208,3 +208,7 @@ volumes:
 networks:
   jdemicronet:
     driver: bridge
+    ipam:
+      config:
+        - subnet: 172.25.0.0/16
+          gateway: 172.25.0.1
