@@ -1,0 +1,240 @@
+13:07:33
+CONTAINER ID   NAME                   CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O       PIDS
+0f2fabe91175   jd-atina-microserver   0.16%     588.5MiB / 7.204GiB   7.98%     3.14MB / 2.22MB   131kB / 105MB   69
+13:07:34
+CONTAINER ID   NAME                   CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O       PIDS
+0f2fabe91175   jd-atina-microserver   0.15%     588.5MiB / 7.204GiB   7.98%     3.14MB / 2.22MB   131kB / 105MB   69
+13:07:36
+CONTAINER ID   NAME                   CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O       PIDS
+0f2fabe91175   jd-atina-microserver   0.18%     588.5MiB / 7.204GiB   7.98%     3.14MB / 2.22MB   131kB / 105MB   69
+13:07:38
+CONTAINER ID   NAME                   CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O       PIDS
+0f2fabe91175   jd-atina-microserver   0.17%     588.5MiB / 7.204GiB   7.98%     3.14MB / 2.22MB   131kB / 105MB   69
+13:07:40
+CONTAINER ID   NAME                   CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O       PIDS
+0f2fabe91175   jd-atina-microserver   0.16%     588.5MiB / 7.204GiB   7.98%     3.14MB / 2.22MB   131kB / 105MB   69
+13:07:42
+CONTAINER ID   NAME                   CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O       PIDS
+0f2fabe91175   jd-atina-microserver   4.61%     588.5MiB / 7.204GiB   7.98%     3.14MB / 2.22MB   131kB / 105MB   69
+13:07:44
+CONTAINER ID   NAME                   CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O       PIDS
+0f2fabe91175   jd-atina-microserver   0.14%     588.3MiB / 7.204GiB   7.98%     3.14MB / 2.22MB   131kB / 105MB   69
+13:07:46
+CONTAINER ID   NAME                   CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O       PIDS
+0f2fabe91175   jd-atina-microserver   0.14%     588.3MiB / 7.204GiB   7.98%     3.14MB / 2.22MB   131kB / 105MB   69
+13:07:48
+CONTAINER ID   NAME                   CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O       PIDS
+0f2fabe91175   jd-atina-microserver   0.16%     588.3MiB / 7.204GiB   7.98%     3.14MB / 2.22MB   131kB / 105MB   69
+13:07:50
+CONTAINER ID   NAME                   CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O       PIDS
+0f2fabe91175   jd-atina-microserver   0.14%     588.3MiB / 7.204GiB   7.98%     3.14MB / 2.22MB   131kB / 105MB   69
+13:07:52
+CONTAINER ID   NAME                   CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O       PIDS
+0f2fabe91175   jd-atina-microserver   0.15%     588.3MiB / 7.204GiB   7.98%     3.14MB / 2.22MB   131kB / 105MB   69
+13:07:54
+CONTAINER ID   NAME                   CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O       PIDS
+0f2fabe91175   jd-atina-microserver   13.32%    612.6MiB / 7.204GiB   8.30%     3.14MB / 2.22MB   131kB / 113MB   70
+13:07:56
+CONTAINER ID   NAME                   CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O       PIDS
+0f2fabe91175   jd-atina-microserver   43.09%    639.9MiB / 7.204GiB   8.67%     3.85MB / 2.34MB   131kB / 113MB   79
+13:07:58
+CONTAINER ID   NAME                   CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O       PIDS
+0f2fabe91175   jd-atina-microserver   0.16%     639.9MiB / 7.204GiB   8.67%     3.85MB / 2.34MB   131kB / 113MB   79
+13:08:00
+CONTAINER ID   NAME                   CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O       PIDS
+0f2fabe91175   jd-atina-microserver   0.14%     639.8MiB / 7.204GiB   8.67%     3.85MB / 2.34MB   131kB / 113MB   79
+13:08:02
+CONTAINER ID   NAME                   CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O       PIDS
+0f2fabe91175   jd-atina-microserver   28.20%    649.4MiB / 7.204GiB   8.80%     4.18MB / 2.44MB   131kB / 113MB   80
+13:08:04
+CONTAINER ID   NAME                   CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O       PIDS
+0f2fabe91175   jd-atina-microserver   3.62%     656.4MiB / 7.204GiB   8.90%     4.25MB / 2.51MB   131kB / 113MB   89
+13:08:06
+CONTAINER ID   NAME                   CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O       PIDS
+0f2fabe91175   jd-atina-microserver   0.15%     656.4MiB / 7.204GiB   8.90%     4.25MB / 2.51MB   131kB / 113MB   89
+13:08:08
+CONTAINER ID   NAME                   CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O       PIDS
+0f2fabe91175   jd-atina-microserver   0.16%     656.4MiB / 7.204GiB   8.90%     4.25MB / 2.51MB   131kB / 113MB   89
+13:08:10
+CONTAINER ID   NAME                   CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O       PIDS
+0f2fabe91175   jd-atina-microserver   3.25%     678.8MiB / 7.204GiB   9.20%     4.29MB / 2.57MB   131kB / 113MB   90
+13:08:12
+CONTAINER ID   NAME                   CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O       PIDS
+0f2fabe91175   jd-atina-microserver   3.27%     679.1MiB / 7.204GiB   9.21%     4.29MB / 2.57MB   131kB / 113MB   90
+13:08:14
+CONTAINER ID   NAME                   CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O       PIDS
+0f2fabe91175   jd-atina-microserver   0.15%     679MiB / 7.204GiB   9.21%     4.29MB / 2.57MB   131kB / 113MB   90
+13:08:16
+CONTAINER ID   NAME                   CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O       PIDS
+0f2fabe91175   jd-atina-microserver   3.67%     680.5MiB / 7.204GiB   9.23%     4.33MB / 2.62MB   131kB / 113MB   90
+13:08:18
+CONTAINER ID   NAME                   CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O       PIDS
+0f2fabe91175   jd-atina-microserver   0.15%     680.5MiB / 7.204GiB   9.23%     4.33MB / 2.62MB   131kB / 113MB   90
+13:08:20
+CONTAINER ID   NAME                   CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O       PIDS
+0f2fabe91175   jd-atina-microserver   0.12%     680.5MiB / 7.204GiB   9.23%     4.33MB / 2.62MB   131kB / 113MB   90
+13:08:22
+CONTAINER ID   NAME                   CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O       PIDS
+0f2fabe91175   jd-atina-microserver   13.16%    682MiB / 7.204GiB   9.25%     4.38MB / 2.67MB   131kB / 113MB   90
+13:08:24
+CONTAINER ID   NAME                   CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O       PIDS
+0f2fabe91175   jd-atina-microserver   0.13%     682MiB / 7.204GiB   9.25%     4.38MB / 2.67MB   131kB / 113MB   90
+13:08:26
+CONTAINER ID   NAME                   CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O       PIDS
+0f2fabe91175   jd-atina-microserver   0.13%     682MiB / 7.204GiB   9.25%     4.38MB / 2.67MB   131kB / 113MB   90
+13:08:28
+CONTAINER ID   NAME                   CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O       PIDS
+0f2fabe91175   jd-atina-microserver   22.56%    684MiB / 7.204GiB   9.27%     4.42MB / 2.72MB   131kB / 113MB   90
+13:08:30
+CONTAINER ID   NAME                   CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O       PIDS
+0f2fabe91175   jd-atina-microserver   0.14%     683.9MiB / 7.204GiB   9.27%     4.42MB / 2.72MB   131kB / 113MB   90
+13:08:32
+CONTAINER ID   NAME                   CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O        PIDS
+0f2fabe91175   jd-atina-microserver   0.23%     680.8MiB / 7.204GiB   9.23%     4.42MB / 2.72MB   3.69MB / 113MB   90
+13:08:34
+CONTAINER ID   NAME                   CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O        PIDS
+0f2fabe91175   jd-atina-microserver   4.68%     680.8MiB / 7.204GiB   9.23%     4.46MB / 2.78MB   3.69MB / 113MB   90
+13:08:36
+CONTAINER ID   NAME                   CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O        PIDS
+0f2fabe91175   jd-atina-microserver   0.13%     680.8MiB / 7.204GiB   9.23%     4.46MB / 2.78MB   3.69MB / 113MB   90
+13:08:38
+CONTAINER ID   NAME                   CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O        PIDS
+0f2fabe91175   jd-atina-microserver   0.15%     680.8MiB / 7.204GiB   9.23%     4.46MB / 2.78MB   3.69MB / 113MB   90
+13:08:40
+CONTAINER ID   NAME                   CPU %     MEM USAGE / LIMIT     MEM %     NET I/O          BLOCK I/O        PIDS
+0f2fabe91175   jd-atina-microserver   4.63%     681.3MiB / 7.204GiB   9.24%     4.5MB / 2.83MB   3.69MB / 113MB   90
+13:08:42
+CONTAINER ID   NAME                   CPU %     MEM USAGE / LIMIT     MEM %     NET I/O          BLOCK I/O        PIDS
+0f2fabe91175   jd-atina-microserver   3.72%     680.9MiB / 7.204GiB   9.23%     4.5MB / 2.83MB   3.69MB / 113MB   90
+13:08:44
+CONTAINER ID   NAME                   CPU %     MEM USAGE / LIMIT     MEM %     NET I/O          BLOCK I/O        PIDS
+0f2fabe91175   jd-atina-microserver   0.14%     680.9MiB / 7.204GiB   9.23%     4.5MB / 2.83MB   3.69MB / 113MB   90
+13:08:46
+CONTAINER ID   NAME                   CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O        PIDS
+0f2fabe91175   jd-atina-microserver   4.61%     681.1MiB / 7.204GiB   9.23%     4.54MB / 2.88MB   3.69MB / 113MB   90
+13:08:48
+CONTAINER ID   NAME                   CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O        PIDS
+0f2fabe91175   jd-atina-microserver   0.15%     680.9MiB / 7.204GiB   9.23%     4.54MB / 2.88MB   3.69MB / 113MB   90
+13:08:50
+CONTAINER ID   NAME                   CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O        PIDS
+0f2fabe91175   jd-atina-microserver   8.56%     681.3MiB / 7.204GiB   9.24%     4.57MB / 2.89MB   3.69MB / 113MB   90
+13:08:52
+CONTAINER ID   NAME                   CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O        PIDS
+0f2fabe91175   jd-atina-microserver   0.18%     681.6MiB / 7.204GiB   9.24%     4.59MB / 2.94MB   3.69MB / 113MB   90
+13:08:54
+CONTAINER ID   NAME                   CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O        PIDS
+0f2fabe91175   jd-atina-microserver   0.14%     681.5MiB / 7.204GiB   9.24%     4.59MB / 2.94MB   3.69MB / 113MB   90
+13:08:56
+CONTAINER ID   NAME                   CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O        PIDS
+0f2fabe91175   jd-atina-microserver   12.33%    681.5MiB / 7.204GiB   9.24%     4.63MB / 2.95MB   3.69MB / 113MB   90
+13:08:58
+CONTAINER ID   NAME                   CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O        PIDS
+0f2fabe91175   jd-atina-microserver   0.14%     681.6MiB / 7.204GiB   9.24%     4.64MB / 2.99MB   3.69MB / 113MB   90
+13:09:00
+CONTAINER ID   NAME                   CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O        PIDS
+0f2fabe91175   jd-atina-microserver   0.15%     681.6MiB / 7.204GiB   9.24%     4.64MB / 2.99MB   3.69MB / 113MB   90
+13:09:02
+CONTAINER ID   NAME                   CPU %     MEM USAGE / LIMIT     MEM %     NET I/O        BLOCK I/O        PIDS
+0f2fabe91175   jd-atina-microserver   3.04%     681.6MiB / 7.204GiB   9.24%     4.67MB / 3MB   3.69MB / 113MB   90
+13:09:04
+CONTAINER ID   NAME                   CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O        PIDS
+0f2fabe91175   jd-atina-microserver   0.14%     681.6MiB / 7.204GiB   9.24%     4.68MB / 3.04MB   3.69MB / 113MB   90
+13:09:06
+CONTAINER ID   NAME                   CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O        PIDS
+0f2fabe91175   jd-atina-microserver   0.14%     681.6MiB / 7.204GiB   9.24%     4.68MB / 3.04MB   3.69MB / 113MB   90
+13:09:08
+CONTAINER ID   NAME                   CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O        PIDS
+0f2fabe91175   jd-atina-microserver   2.77%     681.6MiB / 7.204GiB   9.24%     4.71MB / 3.05MB   3.69MB / 113MB   90
+13:09:10
+CONTAINER ID   NAME                   CPU %     MEM USAGE / LIMIT     MEM %     NET I/O          BLOCK I/O        PIDS
+0f2fabe91175   jd-atina-microserver   0.14%     681.9MiB / 7.204GiB   9.24%     4.73MB / 3.1MB   3.69MB / 113MB   90
+13:09:12
+CONTAINER ID   NAME                   CPU %     MEM USAGE / LIMIT     MEM %     NET I/O          BLOCK I/O        PIDS
+0f2fabe91175   jd-atina-microserver   4.38%     682.1MiB / 7.204GiB   9.25%     4.73MB / 3.1MB   3.69MB / 113MB   90
+13:09:14
+CONTAINER ID   NAME                   CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O        PIDS
+0f2fabe91175   jd-atina-microserver   2.71%     682MiB / 7.204GiB   9.25%     4.76MB / 3.11MB   3.69MB / 113MB   90
+13:09:16
+CONTAINER ID   NAME                   CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O        PIDS
+0f2fabe91175   jd-atina-microserver   0.15%     686MiB / 7.204GiB   9.30%     4.77MB / 3.15MB   3.69MB / 113MB   90
+13:09:18
+CONTAINER ID   NAME                   CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O        PIDS
+0f2fabe91175   jd-atina-microserver   0.14%     686MiB / 7.204GiB   9.30%     4.77MB / 3.15MB   3.69MB / 113MB   90
+13:09:20
+CONTAINER ID   NAME                   CPU %     MEM USAGE / LIMIT   MEM %     NET I/O          BLOCK I/O        PIDS
+0f2fabe91175   jd-atina-microserver   0.66%     686MiB / 7.204GiB   9.30%     4.8MB / 3.16MB   3.69MB / 113MB   90
+13:09:22
+CONTAINER ID   NAME                   CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O        PIDS
+0f2fabe91175   jd-atina-microserver   0.17%     686.4MiB / 7.204GiB   9.31%     4.81MB / 3.21MB   3.69MB / 113MB   90
+13:09:24
+CONTAINER ID   NAME                   CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O        PIDS
+0f2fabe91175   jd-atina-microserver   0.12%     686.4MiB / 7.204GiB   9.31%     4.81MB / 3.21MB   3.69MB / 113MB   90
+13:09:26
+CONTAINER ID   NAME                   CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O        PIDS
+0f2fabe91175   jd-atina-microserver   10.91%    688.1MiB / 7.204GiB   9.33%     4.84MB / 3.22MB   3.69MB / 113MB   90
+13:09:28
+CONTAINER ID   NAME                   CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O        PIDS
+0f2fabe91175   jd-atina-microserver   0.15%     689.5MiB / 7.204GiB   9.35%     4.85MB / 3.26MB   3.69MB / 113MB   90
+13:09:30
+CONTAINER ID   NAME                   CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O        PIDS
+0f2fabe91175   jd-atina-microserver   0.14%     689.5MiB / 7.204GiB   9.35%     4.85MB / 3.26MB   3.69MB / 113MB   90
+13:09:32
+CONTAINER ID   NAME                   CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O        PIDS
+0f2fabe91175   jd-atina-microserver   29.47%    690.2MiB / 7.204GiB   9.36%     4.88MB / 3.27MB   3.69MB / 113MB   90
+13:09:34
+CONTAINER ID   NAME                   CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O        PIDS
+0f2fabe91175   jd-atina-microserver   0.13%     692.6MiB / 7.204GiB   9.39%     4.89MB / 3.31MB   3.69MB / 113MB   90
+13:09:36
+CONTAINER ID   NAME                   CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O        PIDS
+0f2fabe91175   jd-atina-microserver   0.14%     692.6MiB / 7.204GiB   9.39%     4.89MB / 3.31MB   3.69MB / 113MB   90
+13:09:38
+CONTAINER ID   NAME                   CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O        PIDS
+0f2fabe91175   jd-atina-microserver   2.84%     693.9MiB / 7.204GiB   9.41%     4.93MB / 3.32MB   3.69MB / 113MB   90
+13:09:40
+CONTAINER ID   NAME                   CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O        PIDS
+0f2fabe91175   jd-atina-microserver   0.14%     694.4MiB / 7.204GiB   9.41%     4.94MB / 3.37MB   3.69MB / 113MB   90
+13:09:42
+CONTAINER ID   NAME                   CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O        PIDS
+0f2fabe91175   jd-atina-microserver   4.79%     694.3MiB / 7.204GiB   9.41%     4.94MB / 3.37MB   3.69MB / 113MB   90
+13:09:44
+CONTAINER ID   NAME                   CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O        PIDS
+0f2fabe91175   jd-atina-microserver   2.07%     694.4MiB / 7.204GiB   9.41%     4.97MB / 3.38MB   3.69MB / 113MB   90
+13:09:46
+CONTAINER ID   NAME                   CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O        PIDS
+0f2fabe91175   jd-atina-microserver   0.13%     695.8MiB / 7.204GiB   9.43%     4.98MB / 3.42MB   3.69MB / 113MB   90
+13:09:48
+CONTAINER ID   NAME                   CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O        PIDS
+0f2fabe91175   jd-atina-microserver   0.14%     695.8MiB / 7.204GiB   9.43%     4.98MB / 3.42MB   3.69MB / 113MB   90
+13:09:50
+CONTAINER ID   NAME                   CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O        PIDS
+0f2fabe91175   jd-atina-microserver   3.64%     696.1MiB / 7.204GiB   9.44%     5.01MB / 3.43MB   3.69MB / 113MB   90
+13:09:52
+CONTAINER ID   NAME                   CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O        PIDS
+0f2fabe91175   jd-atina-microserver   0.12%     696.1MiB / 7.204GiB   9.44%     5.02MB / 3.47MB   3.69MB / 113MB   90
+13:09:54
+CONTAINER ID   NAME                   CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O        PIDS
+0f2fabe91175   jd-atina-microserver   0.13%     696.1MiB / 7.204GiB   9.44%     5.02MB / 3.47MB   3.69MB / 113MB   90
+13:09:56
+CONTAINER ID   NAME                   CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O        PIDS
+0f2fabe91175   jd-atina-microserver   5.58%     696.3MiB / 7.204GiB   9.44%     5.05MB / 3.48MB   3.69MB / 113MB   90
+13:09:58
+CONTAINER ID   NAME                   CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O        PIDS
+0f2fabe91175   jd-atina-microserver   0.13%     696.6MiB / 7.204GiB   9.44%     5.08MB / 3.53MB   3.69MB / 113MB   90
+13:10:00
+CONTAINER ID   NAME                   CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O        PIDS
+0f2fabe91175   jd-atina-microserver   0.13%     696.6MiB / 7.204GiB   9.44%     5.08MB / 3.53MB   3.69MB / 113MB   90
+13:10:02
+CONTAINER ID   NAME                   CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O        PIDS
+0f2fabe91175   jd-atina-microserver   5.49%     696.6MiB / 7.204GiB   9.44%     5.11MB / 3.54MB   3.69MB / 113MB   90
+13:10:04
+CONTAINER ID   NAME                   CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O        PIDS
+0f2fabe91175   jd-atina-microserver   0.14%     696.8MiB / 7.204GiB   9.45%     5.12MB / 3.58MB   3.69MB / 113MB   90
+13:10:06
+CONTAINER ID   NAME                   CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O        PIDS
+0f2fabe91175   jd-atina-microserver   0.12%     696.8MiB / 7.204GiB   9.45%     5.12MB / 3.58MB   3.69MB / 113MB   90
+13:10:08
+CONTAINER ID   NAME                   CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O        PIDS
+0f2fabe91175   jd-atina-microserver   0.87%     696.6MiB / 7.204GiB   9.44%     5.15MB / 3.58MB   3.69MB / 113MB   90
+13:10:10
+CONTAINER ID   NAME                   CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O        PIDS
+0f2fabe91175   jd-atina-microserver   0.14%     696.8MiB / 7.204GiB   9.45%     5.16MB / 3.63MB   3.69MB / 114MB   90
