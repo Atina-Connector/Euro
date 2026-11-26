@@ -8,7 +8,8 @@
 # run periodically (cron): it also repairs the pool after a restart of the microservice or of the JDE server.
 #
 # Environment (credentials never in this file):
-#   WARMUP_ATINA_URL      Atina REST base URL                       (default http://localhost:8086)
+#   WARMUP_ATINA_URL      URL of the Atina REST gateway (8086), not the gRPC port of the microservice (8077)
+#                                                                   (default http://localhost:8086)
 #   WARMUP_JDE_USER       JDE user of the pool (the one MuleSoft uses)          (required)
 #   WARMUP_JDE_PASSWORD   its password                                          (required)
 #   WARMUP_JDE_ENVIRONMENT                                          (default JUAT920)

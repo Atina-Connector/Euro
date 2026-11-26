@@ -84,13 +84,23 @@ if [ -f "$ENV_FILE" ]; then
     say "kept the existing $ENV_FILE (to change the credentials: edit it, or --uninstall and install again)"
 else
     say "configuration of $ENV_FILE (Enter keeps the value in brackets)"
-    read -r -p "  Atina REST URL [http://localhost:8086]: " url
+    read -r -p "  Atina REST gateway URL (port 8086, not the gRPC port 8077) [http://localhost:8086]: " url
+    url=${url:-http://localhost:8086}
+    case "$url" in
+        *:8077|*:8077/)
+            read -r -p "  WARNING 8077 is the gRPC port of the microservice; the script needs the REST gateway (8086). Use it anyway? [y/N]: " answer
+            case "$answer" in
+                y|Y) ;;
+                *) fail "installation cancelled: run it again with the REST gateway URL" ;;
+            esac
+            ;;
+    esac
     read -r -p "  JDE user (the one MuleSoft uses) [ATINAD]: " user
     read -r -p "  JDE environment [JUAT920]: " environment
     read -r -p "  JDE role [*ALL]: " role
     read -r -s -p "  JDE password: " password
     echo
-    url=${url:-http://localhost:8086}; user=${user:-ATINAD}; environment=${environment:-JUAT920}; role=${role:-*ALL}
+    user=${user:-ATINAD}; environment=${environment:-JUAT920}; role=${role:-*ALL}
     [ -n "$password" ] || fail "the password is required"
     for value in "$url" "$user" "$environment" "$role" "$password"; do
         case "$value" in
