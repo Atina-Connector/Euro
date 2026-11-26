@@ -1,0 +1,5 @@
+# /etc/cron.d/jp55mule-warmup - JP55MULE warm-up every 10 minutes (keep it below SESSION_EXPIRATION_TIME of Atina).
+# Credentials: /etc/jp55mule-warmup.env (mode 600). Output: /var/log/jp55mule-warmup.log
+SHELL=/bin/bash
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+*/10 * * * * root . /etc/jp55mule-warmup.env && /opt/jp55mule/warmup.sh >> /var/log/jp55mule-warmup.log 2>&1
